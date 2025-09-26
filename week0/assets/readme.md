@@ -130,7 +130,7 @@ $ sudo apt install gtkwave
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week0/assets/gtkwave_terminal.png" 
+  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week0/assets/GtkwaveUI.png" 
        alt="GTKWave Installed" width="600"/>
 </p>
 
