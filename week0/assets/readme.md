@@ -213,7 +213,7 @@ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="https://github.com/munigalajohn/RTLtoGDS-tapeout-program/blob/main/week0/assets/magic.png.png" 
+  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week0/assets/magic.png" 
        alt="magic vlsi Installed" width="600"/>
 </p>
 
