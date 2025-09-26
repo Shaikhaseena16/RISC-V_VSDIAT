@@ -100,7 +100,7 @@ $ sudo apt-get install iverilog
 ```
 
 ## 📷 **Installation Verification**
-<p align="center">led.png
+<p align="center">
   <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week0/assets/iverilog.png" 
        alt="Iverilog Installed" width="600"/>
 </p>
@@ -130,7 +130,7 @@ $ sudo apt install gtkwave
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week0/assets/GtkwaveUI.png"
+  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week0/assets/gtkwave_terminal.png" 
        alt="GTKWave Installed" width="600"/>
 </p>
 
@@ -142,6 +142,47 @@ $ sudo apt install gtkwave
 
 ---
 
+### ⚡ **4. Ngspice – Circuit Simulator**
+
+<details>
+<summary><b>Purpose:</b> Performs analog and mixed-signal circuit simulation.</summary>
+
+Ngspice is a mixed-level/mixed-signal circuit simulator based on Spice3f5, Cider1b1 and Xspice.
+
+</details>
+
+## **Ngspice Installation**
+```bash
+$ sudo apt update
+$ sudo apt install ngspice
+```
+
+## 📷 **Installation Verification**
+<p align="center">
+  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week0/assets/ngspce.png" 
+       alt="ngspice Installed" width="600"/>
+</p>
+
+<div align="center">
+
+✅ **Ngspice Successfully Installed**
+
+</div>
+
+---
+
+### 🎨 **5. Magic VLSI – Layout Tool**
+
+<details>
+<summary><b>Purpose:</b> Creates, edits, and analyzes VLSI layouts with DRC capabilities.</summary>
+
+Magic VLSI is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.
+
+</details>
+
+## ✅ **Magic VLSI Installation**
+
+[Magic VLSI](http://opencircuitdesign.com/magic/) is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.  
 
 Follow the steps below to install Magic on an Ubuntu/Debian system:
 
@@ -170,6 +211,22 @@ make
 sudo make install
 ```
 
+## 📷 **Installation Verification**
+<p align="center">
+  <img src="https://github.com/munigalajohn/RTLtoGDS-tapeout-program/blob/main/week0/assets/magic.png.png" 
+       alt="magic vlsi Installed" width="600"/>
+</p>
+
+<div align="center">
+
+✅ **Magic VLSI Successfully Installed**
+
+</div>
+
+---
+
+<div align="center">
+
 ## 🎉 **Installation Summary**
 
 | Tool | Status | Primary Use |
@@ -177,3 +234,11 @@ sudo make install
 | 🧠 **Yosys** | ✅ Complete | RTL Synthesis |
 | 📟 **Iverilog** | ✅ Complete | Verilog Simulation |
 | 📊 **GTKWave** | ✅ Complete | Waveform Analysis |
+| ⚡ **Ngspice** | ✅ Complete | Circuit Simulation |
+| 🎨 **Magic VLSI** | ✅ Complete | Layout Design |
+
+### 🚀 **Environment Ready for VLSI Design Journey!**
+
+</div>
+
+---
