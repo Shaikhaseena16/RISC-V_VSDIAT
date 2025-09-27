@@ -205,7 +205,6 @@ end
 
 ---
 
-✅Summary!
 Use = for combinational logic, <= for sequential logic
 @(*) prevents latch inference in combinational blocks
 Missing else/default causes unintended latches
