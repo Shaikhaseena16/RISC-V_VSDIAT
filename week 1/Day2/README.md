@@ -219,6 +219,9 @@ endmodule
 ## Summary
 
 Learned basic Verilog syntax and writing modules.
+
 Understood nets (wire) vs registers (reg).
+
 Explored combinational logic using assign statements.
+
 Introduced testbenches for simulation and verification.
