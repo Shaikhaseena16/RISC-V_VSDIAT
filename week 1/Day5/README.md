@@ -110,7 +110,7 @@ always @(*) begin
 end
 endmodule
 ```
-![in_comp_if](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week%201/Day5/iverilog-incom_if.png)
+![in_comp_if](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week%201/Day5/if_com.png)
 
 ---
 
