@@ -397,9 +397,12 @@ endmodule
 
 ## Summary
 
-- Used complete if-else and case statements to avoid unintended latch inference.
-- For loops and generate blocks are powerful for writing scalable, synthesizable code.
-- Always ensure every signal is assigned in every possible execution path for combinational logic.
-- Use labs to reinforce concepts with practical Verilog code and synthesis results.
+  Used complete if-else and case statements to avoid unintended latch inference.
+  
+  For loops and generate blocks are powerful for writing scalable, synthesizable code.
+  
+  Always ensure every signal is assigned in every possible execution path for combinational logic.
+  
+  Use labs to reinforce concepts with practical Verilog code and synthesis results.
 
 ---
