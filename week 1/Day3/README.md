@@ -170,8 +170,11 @@ endmodule
 
 ---
 
-Learned combinational vs sequential logic in Verilog
-Procedural blocks (always) used for writing logic behavior
-Case and If-Else statements help define clean decision-making logic
-Order of execution matters, especially for synthesizable RTL
+Learned combinational vs sequential logic in Verilog.
+
+Procedural blocks (always) used for writing logic behavior.
+
+Case and If-Else statements help define clean decision-making logic.
+
+Order of execution matters, especially for synthesizable RTL.
 
