@@ -205,8 +205,11 @@ end
 
 ---
 
-Use = for combinational logic, <= for sequential logic
-@(*) prevents latch inference in combinational blocks
-Missing else/default causes unintended latches
-Never mix blocking and non-blocking in the same always block
+Use = for combinational logic, <= for sequential logic.
+
+@(*) prevents latch inference in combinational blocks.
+
+Missing else/default causes unintended latches.
+
+Never mix blocking and non-blocking in the same always block.
 
