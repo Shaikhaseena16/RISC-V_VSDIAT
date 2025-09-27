@@ -406,3 +406,19 @@ endmodule
   Use labs to reinforce concepts with practical Verilog code and synthesis results.
 
 ---
+
+RTL Workshop Summary (Days 1–5) 🚀
+
+Day 1: RTL basics – modules, ports, assignments, combinational circuits.
+
+Day 2: Combinational & sequential logic – gates, flip-flops, clocking, and resets.
+
+Day 3: Verification – testbenches, simulation, procedural blocks, functional checking.
+
+Day 4: Gate-Level Simulation & assignment types – blocking vs non-blocking, synthesis-simulation mismatch.
+
+Day 5: Optimization – if-else/case best practices, for loops, generate blocks, and scalable designs (MUX, Demux, RCA).
+
+Key Takeaways: Write synthesizable RTL, verify designs via simulation/GLS, and use loops/generate blocks for scalable hardware.
+
+---
