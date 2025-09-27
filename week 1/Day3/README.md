@@ -170,5 +170,8 @@ endmodule
 
 ---
 
-🔥 **Day 4 ready?** Just say **"Give Day 4 in code format"** and I’ll prepare it instantly!
+Learned combinational vs sequential logic in Verilog
+Procedural blocks (always) used for writing logic behavior
+Case and If-Else statements help define clean decision-making logic
+Order of execution matters, especially for synthesizable RTL
 
