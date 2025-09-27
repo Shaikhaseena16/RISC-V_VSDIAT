@@ -142,14 +142,17 @@ show
 
 ---
 
-## 7. Summary
+✅ Summary
 
-✅ You learned the difference between **Simulator**, **Design**, and **Testbench**  
-✅ You ran a **Verilog simulation** using iverilog & GTKWave  
-✅ You analyzed a **2-to-1 Multiplexer**  
-✅ You performed **synthesis using Yosys** and explored **gate libraries**
+Introduced RTL design flow from specification to simulation.
+
+Learned writing basic Verilog modules and I/O declarations.
+
+Created simple combinational circuits like AND, OR, and MUX.
+
+Simulated circuits using testbenches to verify functionality.
 
 ---
 
-🎯 **Next: Proceed to _Day 2 – Combinational Logic & Timing Analysis_**
+
 
