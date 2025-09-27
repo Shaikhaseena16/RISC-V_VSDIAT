@@ -218,4 +218,7 @@ endmodule
 
 ## Summary
 
-This overview provides you with practical insights into timing libraries, synthesis strategies, and reliable coding practices for flip-flops. Continue experimenting with these concepts to deepen your understanding of RTL design and synthesis.
+Learned basic Verilog syntax and writing modules.
+Understood nets (wire) vs registers (reg).
+Explored combinational logic using assign statements.
+Introduced testbenches for simulation and verification.
