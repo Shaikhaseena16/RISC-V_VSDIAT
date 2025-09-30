@@ -1,12 +1,8 @@
 # VSDBabySoC
 
-**Author:** Shaik Haseena
-
-
 ---
 
-## 🧠 Project Overview
-## 🧠 Understanding System on Chip (SoC)
+## 🧠 System on Chip (SoC)
 
 A **System on a Chip (SoC)** is like a **complete computer packed into a single chip**. Instead of using separate components for processing, memory, graphics, and communication, an SoC **integrates everything into one compact unit**, making it ideal for space- and power-constrained devices like **smartphones, smartwatches, and IoT gadgets**.
 
