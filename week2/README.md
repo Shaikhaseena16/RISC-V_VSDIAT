@@ -2,11 +2,56 @@
 
 **Author:** Shaik Haseena
 
-![RISC-V Architecture](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week2/RISC%20V%20.png)  
 
 ---
 
 ## 🧠 Project Overview
+## 🧠 Understanding System on Chip (SoC)
+
+A **System on a Chip (SoC)** is like a **complete computer packed into a single chip**. Instead of using separate components for processing, memory, graphics, and communication, an SoC **integrates everything into one compact unit**, making it ideal for space- and power-constrained devices like **smartphones, smartwatches, and IoT gadgets**.
+
+---
+
+### 🔍 Key Components of an SoC
+
+| Component | Role |
+|-----------|------|
+| **CPU (Central Processing Unit)** | Acts as the *brain* of the system, handling instructions and computations |
+| **Memory (RAM & ROM/Flash)** | RAM stores temporary data while ROM stores permanent firmware or system code |
+| **I/O Interfaces** | Enable communication with external devices like sensors, displays, USB, or audio |
+| **GPU (Graphics Processing Unit)** | Handles image and video rendering for visual output |
+| **DSP (Digital Signal Processor)** | Optimized for processing audio, video, and communication signals |
+| **Power Management Unit** | Regulates power usage for efficiency and longer battery life |
+| **Special Modules (Wi-Fi, Bluetooth, Security, etc.)** | Added based on application needs |
+
+---
+## Types of SoCs
+
+### 1. Microcontroller-based SoC
+- Built around a microcontroller.  
+- Low power usage and high efficiency.  
+- Ideal for simple control tasks in **home appliances, cars, and IoT devices**.  
+
+### 2. Microprocessor-based SoC
+- Built around a microprocessor.  
+- Provides higher processing power and supports operating systems.  
+- Common in **smartphones and tablets** for handling multiple tasks and complex applications.  
+
+### 3. Application-Specific SoC
+- Custom-designed for specific high-performance tasks.  
+- Optimized for **speed and efficiency**.  
+- Used in **graphics cards, AI hardware, networking, and multimedia systems**.  
+
+### ✅ Why SoCs Are So Popular
+
+- **💡 Space Efficient** — Reduces the need for multiple components  
+- **🔋 Power Efficient** — Consumes less energy due to shorter internal interconnects  
+- **⚡ High Performance** — Faster communication between modules  
+- **💰 Cost Effective** — Manufacturing one chip is cheaper than integrating many parts  
+- **🛡️ Reliable** — Fewer components mean fewer points of failure
+
+---
+
 
 **VSDBabySoC** is a compact, open-source System on Chip (SoC) built around the **RVMYTH RISC-V core**. It combines digital processing and analog interfacing, featuring:
 
@@ -61,6 +106,8 @@ This SoC is designed to serve as a **hands-on learning platform** for exploring 
 ---
 
 ## 📌 One Sentence Summary
+
+> **In simple terms, SoC technology enables modern devices to be *smaller, faster, and smarter* by combining multiple electronic functions into a single chip.**
 
 > **VSDBabySoC is a learner-centric RISC-V SoC that not only computes digitally, but also outputs in analog form, enabling you to experiment with real-world audio/video signals.**
 
