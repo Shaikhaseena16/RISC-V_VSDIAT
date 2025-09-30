@@ -2,7 +2,7 @@
 
 **Author:** Shaik Haseena
 
-![RISC-V Architecture](https://exoxjvzws.blob.core.windows.net/mpu1oxlary/risc-v-architecture-block-diagram.html)  
+![RISC-V Architecture](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week2/RISC%20V%20.png)  
 
 ---
 
