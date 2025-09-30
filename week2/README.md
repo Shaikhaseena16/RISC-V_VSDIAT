@@ -81,6 +81,44 @@ This SoC is designed to serve as a **hands-on learning platform** for exploring 
 
 ---
 
+# Role of Functional Modeling in VSDBabySoC Design Flow
+
+Before moving to **RTL (Register Transfer Level)** and **physical design**, functional modeling plays a critical role in the development of **VSDBabySoC**.  
+
+## Why Functional Modeling?
+- **Early Validation:** Ensures the SoC concept and architecture work as intended before detailed RTL coding.  
+- **Design Exploration:** Allows testing of multiple design ideas (e.g., clocking, data flow, DAC behavior) quickly.  
+- **Bug Detection:** Identifies logical or architectural flaws early, saving time and cost in later design stages.  
+- **Reference Model:** Acts as a “golden” model against which RTL implementations can be verified.  
+
+## Application in VSDBabySoC
+1. **System Behavior:** Models the interaction between RVMYTH, PLL, and DAC to validate overall data flow.  
+2. **Clock Synchronization:** Simulates PLL behavior to check stable clock generation for processor and DAC.  
+3. **Data Processing:** Verifies that the RVMYTH’s r17 register cycles values correctly for continuous data streams.  
+4. **Analog Output:** Emulates the DAC’s digital-to-analog conversion to ensure correct multimedia output (saved in **OUT**).  
+
+## Benefits Before RTL & Physical Design
+- Reduces risk of costly design rework.  
+- Provides confidence that RTL implementation will meet system-level goals.  
+- Shortens design cycle by catching errors early.  
+- Guides physical design by validating functionality before focusing on layout, timing, and power.  
+---
+# Why BabySoC is a Simplified Model for Learning SoC Concepts
+
+**BabySoC** is designed as a small and easy-to-understand System on Chip, making it perfect for beginners to learn how SoCs work.  
+
+## Reasons BabySoC is Simplified
+- **Small Size:** Uses only a few key components (RVMYTH processor, PLL, DAC).  
+- **Clear Functionality:** Each block has a simple, well-defined role (process data, generate clock, convert signals).  
+- **Easy Flow:** Shows the basic sequence of SoC operation — input → process → output.  
+- **Hands-On Learning:** Lets learners see how digital data becomes real-world signals (like sound or video).  
+- **Step-by-Step Approach:** Provides a foundation before moving to complex SoCs with many IPs and large designs.  
+
+## Learning Benefits
+- Understand core SoC concepts without being overwhelmed.  
+- Practice the complete design flow: **functional modeling → RTL → physical design.**  
+- Build confidence to explore larger, real-world SoC projects.  
+---
 ## 🎯 Use Cases & Learning Value
 
 - **Signal Output & Multimedia Demo**: Interface with analog hardware (TVs, speakers) for visual or audio projects  
