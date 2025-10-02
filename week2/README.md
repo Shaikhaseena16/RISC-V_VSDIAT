@@ -208,8 +208,6 @@ iverilog -o vsdbabysoc_tb.vvp vsdbabysoc.v tb_vsdbabysoc.v
 
 - Compiles RTL and testbench into `vsdbabysoc_tb.vvp`
 
-![screenshot 02-10](relative/path/to/image.png)
-
 
 ### 3️⃣ Run the Simulation
 
@@ -219,13 +217,20 @@ vvp vsdbabysoc_tb.vvp
 
 - Generates a waveform file: `vsdbabysoc_wave.vcd`
 
+![screenshot 02-10](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week2/iverilog%20.png)
+
+
 ### 4️⃣ View the Waveform
 
 ```bash
 gtkwave vsdbabysoc_wave.vcd
 ```
 
+![screenshot 02-10](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week2/waveform.png)
+
+
 - Open GTKWave and inspect the signals like `CLK`, `reset`, `OUT`, etc.
+
 
 ---
 
@@ -245,27 +250,6 @@ gtkwave vsdbabysoc_wave.vcd
 
 ---
 
-## 📝 Output Example
-
-When simulation runs correctly:
-
-```bash
-VCD info: dumpfile vsdbabysoc_wave.vcd opened for output.
-```
-
-In GTKWave, you will see signal waveforms from 0 to 1020 ns. Zoom, pan, and mark signal transitions to inspect logic behavior.
-
----
-
-## 📷 Screenshots (Optional)
-
-You can include the following screenshots in your GitHub repo or README:
-
-- Terminal showing compilation & simulation
-- GTKWave with signal waveform
-- Zoomed-in timing for critical signals
-
----
 
 ## ✅ Results
 
@@ -276,33 +260,6 @@ You can include the following screenshots in your GitHub repo or README:
 
 ---
 
-## 📌 Notes
 
-- Ignore this GTK warning if it appears:
-  ```
-  Gtk-Message: Failed to load module "canberra-gtk-module"
-  ```
-  It does not affect simulation or waveform analysis.
 
-- If you make any changes to your Verilog files, rerun all steps (compile, simulate, and view).
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 👨‍💻 Author
-
-- **Your Name**
-- [GitHub Profile](https://github.com/yourusername)
-
----
-
-## 🙌 Acknowledgments
-
-- [Icarus Verilog](http://iverilog.icarus.com/)
-- [GTKWave](http://gtkwave.sourceforge.net/)
-- [VSDOpen](https://vsdiat.com/) – for open-source SoC design enablement
