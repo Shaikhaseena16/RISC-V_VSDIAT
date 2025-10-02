@@ -1,3 +1,4 @@
+## TASK - 1
 # VSDBabySoC
 
 ---
@@ -147,3 +148,161 @@ Before moving to **RTL (Register Transfer Level)** and **physical design**, func
 
 ---
 
+## TASK - 2
+
+# 🧪 VSD BabySoC – RTL Simulation & Waveform Analysis
+
+This project simulates the **VSD BabySoC** design using Verilog, Icarus Verilog, and GTKWave. It includes a testbench, simulation instructions, and waveform analysis to verify the functionality of the RTL design.
+
+---
+
+## 📁 Project Structure
+
+```
+VSDBabySoC/
+├── LICENSE
+├── Makefile
+├── README.md              # This file
+├── src/
+│   └── module/
+│       ├── vsdbabysoc.v           # RTL Design (DUT)
+│       ├── tb_vsdbabysoc.v        # Testbench
+│       ├── vsdbabysoc_tb.vvp      # Compiled simulation output
+|       ├── rvmyth.v               # rvmyth verilog file(sub module)
+|       ├── avsddac.v              # avsddac verilog file(sub module)
+|       ├── avsdpll.v              # avsdpll verilog file(sub module)
+│       ├── vsdbabysoc_wave.vcd    # Waveform output
+│       └── testbench.v            # (Alternate or unused testbench)
+```
+
+---
+
+## 🔧 Tools Required
+
+- [Icarus Verilog](http://iverilog.icarus.com/) – Verilog simulator  
+- [GTKWave](http://gtkwave.sourceforge.net/) – Waveform viewer  
+- Ubuntu or any Linux-based terminal
+
+### 🛠️ Installation on Ubuntu
+
+```bash
+sudo apt update
+sudo apt install iverilog gtkwave
+```
+
+---
+
+## 🚀 How to Run the Simulation
+
+### 1️⃣ Navigate to Project Directory
+
+```bash
+cd src/module
+```
+
+### 2️⃣ Compile the Verilog Files
+
+```bash
+iverilog -o vsdbabysoc_tb.vvp vsdbabysoc.v tb_vsdbabysoc.v
+```
+
+- Compiles RTL and testbench into `vsdbabysoc_tb.vvp`
+
+![screenshot 02-10](relative/path/to/image.png)
+
+
+### 3️⃣ Run the Simulation
+
+```bash
+vvp vsdbabysoc_tb.vvp
+```
+
+- Generates a waveform file: `vsdbabysoc_wave.vcd`
+
+### 4️⃣ View the Waveform
+
+```bash
+gtkwave vsdbabysoc_wave.vcd
+```
+
+- Open GTKWave and inspect the signals like `CLK`, `reset`, `OUT`, etc.
+
+---
+
+## 📈 Signals Observed in GTKWave
+
+| Signal Name     | Description                    |
+|------------------|-------------------------------|
+| `CLK`           | Clock signal                   |
+| `reset`         | System reset                   |
+| `ENB_CP`        | Enable Charge Pump             |
+| `ENB_VCO`       | Enable VCO                     |
+| `OUT`           | Main output of the module      |
+| `VCO_IN`        | VCO input                      |
+| `REF`           | Reference input                |
+| `VREFH`, `VREFL`| High and Low reference voltages|
+| `RV_TO_DAC[]`   | Bus connected to DAC           |
+
+---
+
+## 📝 Output Example
+
+When simulation runs correctly:
+
+```bash
+VCD info: dumpfile vsdbabysoc_wave.vcd opened for output.
+```
+
+In GTKWave, you will see signal waveforms from 0 to 1020 ns. Zoom, pan, and mark signal transitions to inspect logic behavior.
+
+---
+
+## 📷 Screenshots (Optional)
+
+You can include the following screenshots in your GitHub repo or README:
+
+- Terminal showing compilation & simulation
+- GTKWave with signal waveform
+- Zoomed-in timing for critical signals
+
+---
+
+## ✅ Results
+
+- ✅ Successful compilation of Verilog code
+- ✅ Simulation generated a valid `.vcd` waveform
+- ✅ Signal transitions behave as expected
+- ✅ Design verified using GTKWave
+
+---
+
+## 📌 Notes
+
+- Ignore this GTK warning if it appears:
+  ```
+  Gtk-Message: Failed to load module "canberra-gtk-module"
+  ```
+  It does not affect simulation or waveform analysis.
+
+- If you make any changes to your Verilog files, rerun all steps (compile, simulate, and view).
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+- **Your Name**
+- [GitHub Profile](https://github.com/yourusername)
+
+---
+
+## 🙌 Acknowledgments
+
+- [Icarus Verilog](http://iverilog.icarus.com/)
+- [GTKWave](http://gtkwave.sourceforge.net/)
+- [VSDOpen](https://vsdiat.com/) – for open-source SoC design enablement
