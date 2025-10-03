@@ -250,6 +250,49 @@ gtkwave vsdbabysoc_wave.vcd
 
 ---
 
+## 🧠 Waveform Summary
+
+This waveform represents the startup and operational behavior of the SoC module under simulation.
+
+### ✅ Key Observations
+
+- **Clock (`CLK`)**  
+  - Runs continuously throughout the simulation as the main timing reference.
+
+- **Reset (`reset`)**  
+  - Starts **HIGH**, then transitions **LOW**, indicating an *active-high reset* that gets deasserted early.  
+  - System activity begins immediately after reset release.
+
+- **Control Signals (`ENB_CP`, `ENB_VCO`)**  
+  - These signals enable internal blocks (e.g., Charge Pump and VCO).  
+  - They toggle sequentially after reset, suggesting a staged activation process.
+
+- **Reference Signal (`REF`)**  
+  - Remains constant during the simulation, acting as a stable timing or voltage reference.
+
+- **DAC / Control Signals (`RV_TO_DAC[9:0]`, `VCO_IN`, `OUT`)**  
+  - Show **step-wise digital transitions**, indicating gradual tuning or feedback control — likely part of a calibration or PLL locking loop.
+
+- **Voltage Reference Rails (`VREFH`, `VREFL`)**  
+  - Stay constant, serving as high/low voltage anchors.
+
+---
+
+### 📌 Interpretation
+
+The waveform suggests a **startup initialization sequence** typical for **PLL or mixed-signal control logic**:
+
+1. **Reset asserted → released.**  
+2. **Clock begins driving synchronous logic.**  
+3. **Enable signals activate subsystem blocks one-by-one.**  
+4. **DAC/VCO control signals gradually adjust (ramping behavior).**  
+5. **Output (`OUT`) responds accordingly.**
+
+This behavior aligns with a **PLL lock-in or analog calibration process**.
+
+---
+
+
 
 ## ✅ Results
 
