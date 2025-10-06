@@ -226,7 +226,7 @@ vvp vsdbabysoc_tb.vvp
 gtkwave vsdbabysoc_wave.vcd
 ```
 
-![screenshot 02-10](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week2/waveform.png)
+![screenshot 02-10](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/week2/waveform-2.png)
 
 
 - Open GTKWave and inspect the signals like `CLK`, `reset`, `OUT`, etc.
