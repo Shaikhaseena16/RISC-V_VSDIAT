@@ -31,7 +31,7 @@ Gate-Level Simulation (GLS) verifies the functionality of a design **after synth
 ```bash
 yosys
 ```
-![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/yosys.png)
+![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%201/yosys.png)
 
 Inside the Yosys shell, run:
 ```yosys
