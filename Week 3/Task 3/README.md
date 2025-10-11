@@ -6,6 +6,7 @@
 git clone https://github.com/parallaxsw/OpenSTA.git
 cd OpenSTA
 ```
+![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%203/git%20clone.png)
 
 ### **Build the Docker Image**
 
@@ -18,6 +19,9 @@ docker build --file Dockerfile.ubuntu22.04 --tag opensta .
 ```bash
 docker run -i -v $HOME:/data opensta
 ```
+
+![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%203/docker.png)
+
 % symbol indicates the opensta shell.
 
 ---
@@ -133,10 +137,7 @@ pin (GND#2) {
 
 Fixing this syntax will resolve the parsing error and allow OpenSTA to continue analysis smoothly.
 
-<p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week3/Task3/report_checks.PNG" 
-       alt="SoC design flow" width="600"/>
-</p>
+![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%203/reportchecks.png)
 
 ## **4. VSDBabySoC PVT Corner Analysis (Post-Synthesis Timing)**
 
@@ -233,6 +234,7 @@ sta_worst_min_slack.txt
 sta_tns.txt
 sta_wns.txt
 ```
+
 
 | **File Name**             | **Description**                         |
 | ------------------------- | ------------------------------------------ |
