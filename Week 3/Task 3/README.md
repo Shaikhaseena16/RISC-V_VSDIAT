@@ -137,7 +137,7 @@ pin (GND#2) {
 
 Fixing this syntax will resolve the parsing error and allow OpenSTA to continue analysis smoothly.
 
-![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%203/reportchecks.png)
+![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%203/slack.png)
 
 ## **4. VSDBabySoC PVT Corner Analysis (Post-Synthesis Timing)**
 
