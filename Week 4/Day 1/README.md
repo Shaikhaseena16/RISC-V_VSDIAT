@@ -346,18 +346,18 @@ ngspice day1_nfet_idvds_L2_W5.spice
 plot -vdd#branch
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week4/Day1 /Images/cloning.png" 
+  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%204/Day%201/Images/ngspice.png" 
        alt="cloning" width="600"/>
 </p>
 
 
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week4/Day1 /Images/day1.png" 
+  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%204/Day%201/Images/vim.png" 
        alt="day1" width="600"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week4/Day1 /Images/ngspice graph.png" 
+  <img src="https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%204/Day%201/Images/day1_vds.png" 
        alt="day1" width="600"/>
 </p>
