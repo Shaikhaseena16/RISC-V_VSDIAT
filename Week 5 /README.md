@@ -31,7 +31,7 @@ cd OpenROAD-flow-scripts
 ```bash
 sudo ./setup.sh
 ```
-![Alt Text]()
+![Alt Text](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%205%20/image/setup.png)
 
 ### 3. Build OpenROAD
 
@@ -39,7 +39,7 @@ sudo ./setup.sh
 ./build_openroad.sh --local
 ```
 
-![Alt Text]()
+![Alt Text](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%205%20/image/build.png)
 
 
 ### 4. Verify Installation
@@ -49,9 +49,9 @@ source ./env.sh
 yosys -help  
 openroad -help
 ```
-![Alt Text]()
+![Alt Text](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%205%20/image/source.png)
 
-![Alt Text]()
+![Alt Text](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%205%20/image/openroad%20_help.png)
 
 ### 5. Run the OpenROAD Flow
 
@@ -60,7 +60,7 @@ cd flow
 make
 ```
 
-![Alt Text]()
+![Alt Text](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%205%20/image/Make.png)
 
 ### 6. Launch the graphical user interface (GUI) to visualize the final layout
 
@@ -68,7 +68,7 @@ make
  make gui_final
 ```
 
-![Alt Text]()
+![Alt Text](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%205%20/image/gui.png)
 
 ✅ Installation Complete! You can now explore the full RTL-to-GDSII flow using OpenROAD.
 
