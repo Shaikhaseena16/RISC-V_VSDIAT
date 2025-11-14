@@ -35,9 +35,9 @@ yosys
 
 Inside the Yosys shell, run:
 ```yosys
-read_verilog /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/vsdbabysoc.v
-read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/rvmyth.v
-read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/clk_gate.v
+read_verilog haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/module/vsdbabysoc.v
+read_verilog -I haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/rvmyth.v
+read_verilog -I haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/clk_gate.v
 
 ```
 ![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%201/read_desgin%20-1.png)
@@ -50,9 +50,9 @@ read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya1
 ### **Step 2: Load the Liberty Files for Synthesis**
 Inside the same Yosys shell, run:
 ```yosys
-read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/avsdpll.lib
-read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/avsddac.lib
-read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -lib haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/lib/avsdpll.lib
+read_liberty -lib haseena@haseena/DesktopVSDBabySoCC/VSDBabySoC/src/lib/avsddac.lib
+read_liberty -lib haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
 ![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%201/read_library.png)
@@ -73,7 +73,7 @@ synth -top vsdbabysoc
 
 ### **Step 4: Map D Flip-Flops to Standard Cells**
 ```yosys
-dfflibmap -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+dfflibmap -liberty haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
 ![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%201/diff.png)
@@ -83,7 +83,7 @@ dfflibmap -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_h
 ### **Step 5: Perform Optimization and Technology Mapping**
 ```yosys
 opt
-abc -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
+abc -liberty haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
 ```
 ![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%201/opt.png)
 ![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%201/abc.png)
@@ -112,7 +112,7 @@ stat
 
 ### **Step 8: Write the Synthesized Netlist**
 ```yosys
-write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
+write_verilog -noattr haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
 ```
 ![screenshot](https://github.com/Shaikhaseena16/RISC-V_VSDIAT/blob/main/Week%203/Task%201/write_verilog.png)
 
@@ -124,7 +124,7 @@ write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_s
 ### **Step 1: Compile the Testbench**
 Run the following `iverilog` command to compile the testbench:
 ```bash
-iverilog -o /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM -DFUNCTIONAL -DUNIT_DELAY=#1 -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/testbench.v
+iverilog -o haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM -DFUNCTIONAL -DUNIT_DELAY=#1 -I haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/include -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module haseena@haseena/Desktop/VSDBabySoCC/VSDBabySoC/src/module/testbench.v
 ```
 ---
 ### **Step 2: Navigate to the Post-Synthesis Simulation Output Directory**
